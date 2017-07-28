@@ -1,0 +1,1 @@
+var myArray = [800, 1600, false, "Zamien"] 

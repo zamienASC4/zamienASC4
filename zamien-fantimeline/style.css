@@ -1,0 +1,25 @@
+h1 {
+    border: solid 6px orange;
+}
+
+h3 {
+    font-family: times;
+    border: solid 3px black;
+    margin-right: 280px;
+    margin-left: 280px;
+}
+
+.timeline {
+    border: solid 3px black;
+    margin-right:600px;
+    margin-left: 600px;
+    font-size: 25px;
+}
+
+img {
+    border: solid 5px;
+}
+
+p{
+    font-size: 20px;
+}

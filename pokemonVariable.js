@@ -1,0 +1,10 @@
+var onixHP = 35;
+var onixNum = 95;
+var onixType = "rock and ground"; 
+var onixBestMove = "stone edge";
+var onixLastEvo = false;
+var onixAttack = 45;
+var onixDefense = 160;
+var onixSpeed = 70;
+var onixSpeedAttack = 30;
+var onixSpeedDefense = 45;

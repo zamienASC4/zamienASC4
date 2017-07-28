@@ -1,0 +1,72 @@
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+        
+    }
+}
+
+
+@media (min-width: 768px){}
+    .container {
+        width: 750px;
+        
+    }
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header{
+    background-image: url("https://s-media-cache-ak0.pinimg.com/736x/5e/22/86/5e2286e02a8d3a65558ad3adf7534670--app-logo-gaming-logo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 1600px;
+}
+
+.navbar-header {
+    background-color: transparent;
+}
+
+.page-scroll{
+    background-color: transparent;
+    color: purple;
+    font-size: 15px;
+}
+
+.intro-lead-in{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.intro-heading{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+a #services{
+    text-align: center;
+}
+
+.navbar-toggle {
+    background-color: #fed136;
+    border-color: #fed136;
+    font-size: 12px;
+}
+
+button {
+  position: relative;
+  z-index: 100000;
+}
