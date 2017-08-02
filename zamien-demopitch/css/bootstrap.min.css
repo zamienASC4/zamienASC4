@@ -9,3 +9,11 @@
 .navbar-brand {
     font-size: 30px solid;
 }
+#demo{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
