@@ -11,6 +11,12 @@
 
     <title>Conversation Continuer</title>
 
+      <!--Reference platform.js library here-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--Reference Client ID in meta tag here-->
+    <meta name="google-signin-client_id" content="683520432765-lg295sols82294kakel7p4l7fmhopi8f.apps.googleusercontent.com">
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,6 +29,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+   
 
     <script src="sketch.js"></script>
 
@@ -44,6 +52,11 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">ZAS INC.</a>
             </div>
+
+            <div class="signs">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+        </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
