@@ -85,9 +85,22 @@ var play = function(userChoice) {
 
 
 
-var reset = function() {
+var reset = function(originalScore) {
 	loses = 0;
 	wins = 0;
 	document.getElementById("wins").innerHTML=wins;
 	document.getElementById("loses").innerHTML=loses;
 };
+
+$( "#options" ).click(function(userChoice) {
+ 
+});
+
+$( " #username" ).click(function(userChoice){
+
+});
+
+function othername() {
+    var input = document.getElementById("userInput").value;
+    alert(input);
+}
