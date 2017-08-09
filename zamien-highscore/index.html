@@ -43,25 +43,28 @@
     <div class="main">
         <div class="container">
             <section class="content">
-                                <button class="play rock" type="button" onclick="play('rock')"><img src="http://d2jv9003bew7ag.cloudfront.net/uploads/Brooklyn-Graffiti-History-865x577.jpg" style="width:304px;height:228px;"></button>
-                                <button class="play paper" type="button" onclick="play('paper')"><img src="http://streetartnyc.org/wp-content/uploads/2016/10/greetings-tour-street-art-jersey-city.jpg" style="width:304px;height:228px;"></img></button>
-                                <button class="play scissors" type="button" onclick="play('scissors')"><img src="https://static1.squarespace.com/static/5774503c893fc02baa29cc64/t/577457cae4fcb5ee08dff55b/1473960215172/" style="width:304px;height:228px;"></img></button>
-                                <div style="clear:both;"></div>
-                                <p><span id="player"></span> <span id="opponent"></span></p>
-                                <h2 id="results"></h2>
-                            </section>
-                            <aside class="aside">
-                                <div class="scorebox">
-                                    <h2>Score</h2>
-                                    <div class="score-num"><span id="wins">0</span> <br />wins</div>
-                                    <div class="score-divider"><span>-</span></div>
-                                    <div class="score-num"><span id="loses">0</span> <br />loses</div>
-                                </div>
-                                <button type="reset" id="reset" onclick="reset()">reset scores</button>
-                                <button type="submit" id="submit" onclick="updateDB()">save</button>
-                            </aside>
-            </div>
+                <button class="play rock" type="button" onclick="play('rock')"><img src="http://d2jv9003bew7ag.cloudfront.net/uploads/Brooklyn-Graffiti-History-865x577.jpg" style="width:304px;height:228px;"></button>
+                <button class="play paper" type="button" onclick="play('paper')"><img src="http://streetartnyc.org/wp-content/uploads/2016/10/greetings-tour-street-art-jersey-city.jpg" style="width:304px;height:228px;"></img></button>
+                <button class="play scissors" type="button" onclick="play('scissors')"><img src="https://static1.squarespace.com/static/5774503c893fc02baa29cc64/t/577457cae4fcb5ee08dff55b/1473960215172/" style="width:304px;height:228px;"></img></button>
+                <div style="clear:both;"></div>
+                <p><span id="player"></span> <span id="opponent"></span></p>
+                <h2 id="results"></h2>
+            </section>
+                            
+            <aside class="aside">
+                <div class="scorebox">
+                    <h2>Score</h2>
+                    <div class="score-num"><span id="wins">0</span> <br />wins</div>
+                    <div class="score-divider"><span>-</span></div>
+                    <div class="score-num"><span id="loses">0</span> <br />loses</div>
+                </div>
+                
+                <button type="reset" id="reset" onclick="reset()">reset scores</button>
+                <button type="submit" id="submit" onclick="updateDB()">save</button>
+            </aside>
+            
         </div>
+    </div>
 
 </body>
 

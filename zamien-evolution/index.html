@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <!--Reference platform.js library here-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--Reference Client ID in meta tag here-->
+    <meta name="google-signin-client_id" content="863050016619-ns2n2h859edm4egv2jj0n6shb4qivh03.apps.googleusercontent.com">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,11 +26,9 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!--Reference platform.js library here-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-    <!--Reference Client ID in meta tag here-->
-    <meta name="google-signin-client_id" content="392149063814-e4q6optj7tdrcdftrpfuqkjmvr1f65fq.apps.googleusercontent.com">
+    <script src="add.js"></script>
+    <script src="rps.js"></script>
+    <script src="api.js"></script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -42,12 +45,6 @@
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
-        <div class="gsigns">
-            <div class="signs">
-                <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
-            </div>
-        </div>
 
         <div>
             <ul class="sidebar-nav">
@@ -67,10 +64,17 @@
                 <li>
                     <a href="#portfolio" onclick=$("#menu-close").click();>RPS GAME</a>
                 </li>
-                <li>
-                    <a href="#contact" onclick=$("#menu-close").click();>Info</a>
+                 <li>
+                    <a href="#api" onclick=$("#menu-close").click();>Name Generator</a>
                 </li>
             </ul>
+        </div>
+
+        <div class="gsigns">
+            <div class="signs">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <a href="" class="signOut" onclick="onSignOut();">Sign out</a>
+            </div>
         </div>
     </nav>
 
@@ -162,59 +166,40 @@
         <!-- /.container -->
     </section>
 
-    <!-- Callout -->
+    <!-- RPS GAME -->
     <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
+        <div class=game-everything>
+            <h1>RPS Game: CITY EDITION</h1>
+                
+                <div class="main-game">
+
+                    <div class="container game-buttons">
+                        <section class="content">
+                            <button class="play rock" type="button" onclick="play('rock')"><img src="http://d2jv9003bew7ag.cloudfront.net/uploads/Brooklyn-Graffiti-History-865x577.jpg" style="width:304px;height:228px;"></button>
+                            <button class="play paper" type="button" onclick="play('paper')"><img src="http://streetartnyc.org/wp-content/uploads/2016/10/greetings-tour-street-art-jersey-city.jpg" style="width:304px;height:228px;"></img></button>
+                            <button class="play scissors" type="button" onclick="play('scissors')"><img src="https://static1.squarespace.com/static/5774503c893fc02baa29cc64/t/577457cae4fcb5ee08dff55b/1473960215172/" style="width:304px;height:228px;"></img></button>
+                            <div style="clear:both;"></div>
+                            <p><span id="player"></span> <span id="opponent"></span></p>
+                            <h2 id="results"></h2>
+                        </section>
+                                        
+                        <aside class="aside">
+                            <div class="scorebox">
+                                <h2>Score</h2>
+                                <div class="score-num"><span id="wins">0</span> <br />wins</div>
+                                <div class="score-divider"><span>-</span></div>
+                                <div class="score-num"><span id="loses">0</span> <br />loses</div>
+                            </div>
+                            
+                            <button type="reset" id="reset" onclick="reset()">reset scores</button>
+                            <button type="submit" id="submit" onclick="updateDB()">save</button>
+                        </aside>
+                        
+                    </div>
+                </div>
+            </div>
     </aside>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Our Work</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
 
     <!-- Call to Action -->
     <aside class="call-to-action bg-primary">
@@ -229,7 +214,43 @@
         </div>
     </aside>
 
-    
+    <!-- API -->
+    <section id="api" class="API">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h3>Having Trouble Thinking of a New Username?</h3>
+
+                    <h4></h4>
+                    
+                    <div class="container">
+                        <div class="row api-button">
+                            <div class="col-lg-12">
+                                <h5>Click the Button Below to Generate a Random Word to Use as Your Username</h5>
+                                <button onclick="RandomWord()">Click me</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <p id="demo" class="col-lg-12 text-center"></p>
+
+                                <script class="text">
+                                    function myFunction() {
+                                    document.getElementById("demo").innerHTML = "Hello World";
+                                    }
+                                </script>
+                        </div>
+                    </div>
+                    
+                    
+                    <a href="#" class="btn btn-dark">View More Items</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
     <!-- Footer -->
     <footer>

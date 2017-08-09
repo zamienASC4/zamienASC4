@@ -1,12 +1,12 @@
-//called when successful user log in
 function onSignIn(googleUser) {
-    console.log('User signed in!');
-    var profile = googleUser.getBasicProfile();
-    //change userName text, img source, & email text based on profile
-    $(".userName").text(profile.getName());
-    $("img").attr("src", profile.getImageUrl());
-    $(".email").text(profile.getEmail());
-}
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+       
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
 
 //called when "sign out" button clicked
 function onSignOut() {
@@ -19,3 +19,4 @@ function onSignOut() {
         $("img").attr("src", "assets/placeholder.png");
         $(".email").text("example@example.com");
     });}
+

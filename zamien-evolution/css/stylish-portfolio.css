@@ -30,8 +30,29 @@ body {
     font-weight: 700;
 }
 
+#main-game{
+    align-items: center;
+    padding: 0 30px;
+}
+
+#game-buttons{
+    align-items: center;
+    padding: 0 30px;
+}
+
+#api-button{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#game-everything {
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+
 #gsigns{
-    padding: 10 auto;
+    padding: 30 auto;
 }
 
 #ptext{
@@ -204,8 +225,7 @@ hr.small {
     display: table;
     width: 100%;
     height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
