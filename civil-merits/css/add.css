@@ -1,1 +1,18 @@
-@media (min-width: 768px) {.dropdown-menu li:hover .sub-menu {visibility: visible;}} and @media (min-width: 768px) {.dropdown:hover .dropdown-menu {display: block;}}
+@media (min-width: 768px) {
+    .dropdown-menu li:hover .sub-menu {
+        visibility: visible;
+        }
+} 
+and @media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        }
+}
+
+
+.basic-rights .basic-responsibilities{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
