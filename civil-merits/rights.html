@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Civil Merits</title>
 	<link rel="shortcut-icon" href="../../img/imagecivil.png" type="image/png" title="Civil Merits">
+	<link href="css/add.css" rel="stylesheet">
+	<script src="js/add.js"></script>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +33,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html"><span><b>Civil Merits</b></span></a>
+				<a class="navbar-brand" href="index.html"><img class="img-responsive2 pull-left" src="images/imagecivil.png"><span>Civil Merits</span></a>
 			</div>
 			<div class="navbar-collapse collapse">							
 				<div class="menu">
@@ -40,7 +42,24 @@
 						<li role="presentation"><a href="rights.html">Rights</a></li>
 						<li role="presentation"><a href="report.html">Report</a></li>
 						<li role="presentation"><a href="record.html">Record</a></li>
-						<li role="presentation"><a href="about.html">About</a></li>						
+						<li role="presentation"><a href="id.html">ID</a><li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="about.html">About <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li>
+									<li><a href="#">History</a></li>
+									<li><a href="#">Sources</a></li>
+									<li><a href="#">Future Plans</a></li>
+									<li class="divider"></li>
+									<li class="nav-header">Developers</li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">About Us</a></li>
+								</li>
+						</li>	
+
+						
+    				</ul>
+
 					</ul>
 				</div>
 			</div>			
@@ -50,28 +69,78 @@
 	<div class="breadcrumb">
 		<h2>Knowing Your <strong><b>Rights</b></strong></h2>
 	</div>
-	<div class="basic">
-		<div class"basic-responsibilites">
-			<h3>Your <b>Responsibilities</b></h3>
-				<ul>
-					<li><b>Do Stay Calm</b> and be polite</li>
-					<li><b>Do Not Interfere</b> with or obstruct the police</li>
-					<li><b>Do not lie</b> or give false documents</li>
-					<li><b>Do prepare yourself and your family</b> in case you are arrested</li>
-					<li><b>Do remember the detail</b> of the encounter</li>
-				</ul>
+	
+	
+	<h3>Quick Facts</h3>
+	<!-- Basic Rights Dropdown-->
+	<div class="panel-group" id="accordion">
+		<!--First Dropdwon-->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+				Your Rights</a>
+			</h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse in">
+			<div class="panel-body">
+				<div class"basic-responsibilites">
+						<h3>Your <b>Responsibilities</b></h3>
+							<ul>
+								<li><b>Do Stay Calm</b> and be polite</li>
+								<li><b>Do Not Interfere</b> with or obstruct the police</li>
+								<li><b>Do not lie</b> or give false documents</li>
+								<li><b>Do prepare yourself and your family</b> in case you are arrested</li>
+								<li><b>Do remember the detail</b> of the encounter</li>
+							</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="basic-rights">
-			<h3>Your <b>Rights</b></h3>
-				<ul>
-					<li><b>You have the right to remain silent.</b> If you wish to exercise that right, say so out loud.</li>
-					<li><b>You have the right to refuse to consent</b> to a search of yourself, your car or your home(check about warrants).</li>
-					<li>If you are not under arrest, <b> you have the right to calmly leave.</b></li>
-					<li><b>You have the right to a lawyer</b> if you are arrested</li>
-					<li><b>Regardless of your immigration or citizenship status</b> you have constitutional rights</li>
-				</ul>
+		<!--Second Dropdown -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+				Your Responsibilities</a>
+			</h4>
+			</div>
+			<div id="collapse2" class="panel-collapse collapse">
+			<div class="panel-body">
+				<div class="basic-rights">
+					<h3>Your <b>Rights</b></h3>
+						<ul>
+							<li><b>You have the right to remain silent.</b> If you wish to exercise that right, say so out loud.</li>
+							<li><b>You have the right to refuse to consent</b> to a search of yourself, your car or your home(check about warrants).</li>
+							<li>If you are not under arrest, <b> you have the right to calmly leave.</b></li>
+							<li><b>You have the right to a lawyer</b> if you are arrested</li>
+							<li><b>Regardless of your immigration or citizenship status</b> you have constitutional rights</li>
+						</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!--Third Dropdown -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+				Downloadable Cheat Sheet</a>
+			</h4>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse">
+				<a href="https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi0.wp.com%2Fwww.copblock.org%2Fwp-content%2Fuploads%2F2013%2F04%2FHOW-TO-DEAL-WITH-POLICE.jpg">Click here to download the image</a>
+				<div class="panel-body"><div class="cheat-sheet">
+					<img src='https://slack-imgs.com/?c=1&url=https%3A%2F%2Fi0.wp.com%2Fwww.copblock.org%2Fwp-content%2Fuploads%2F2013%2F04%2FHOW-TO-DEAL-WITH-POLICE.jpg'></img>
+				</div>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	<h3>In Depth Rights</h3>
+	
+	<!--
 	<div class="ourstory">
 		<div class="container">
 			<div class="col-md-10 col-md-offset-1" >
@@ -189,7 +258,7 @@
 			<li><a href="#">4 <span class="sr-only">(current)</span></a></li>
 			</ul>
 		</nav>
-	</div>
+	</div>-->
 	
 	<footer>
 		<div class="inner-footer">
@@ -203,9 +272,9 @@
 					<div class="col-md-4 l-posts">
 						<h3 class="widgetheading">Quick Links</h3>
 						<ul>
-							<li><a href="ourstory.html">Learn</a></li>
-							<li><a href="gallery.html">Report</a></li>
-							<li><a href="events.html">Record</a></li>
+							<li><a href="rights.html">Learn</a></li>
+							<li><a href="report.html">Report</a></li>
+							<li><a href="record.html">Record</a></li>
 							<li><a href="id.html">ID</a></li>
 							<li><a href="about.html">ABOUT</a></li>
 						</ul>

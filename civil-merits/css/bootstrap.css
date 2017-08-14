@@ -28,6 +28,18 @@ section,
 summary {
   display: block;
 }
+
+.basic-rights .basic-responsibilities{
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.basic{
+    margin: 0 auto;
+}
+
+
 audio,
 canvas,
 progress,
